@@ -1,15 +1,10 @@
-import { Link } from 'react-router-dom'
-import style from './Container.module.css'
 
+import styles from "./Container.module.css";
 
-
-const Container = ({ children }) => {
-    return (
-        <main className={style.container}>
-            {children}
-        </main>
-    )
-
+function Container({children}) {
+  return <main className={styles.container}>
+      {children}
+  </main>
 }
 
 export default Container
